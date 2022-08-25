@@ -1,0 +1,76 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.frame {
+    background-color:black;
+    border-radius:20px;
+    padding:5px;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(0,0,0,0.5);
+}
+
+.screen {
+    width: 288px;
+    height: 120px;
+}
+
+.screen-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#answer {
+    position: relative;
+    bottom: 5px;
+    border: none;
+    text-align: right;
+    height:50px;
+    font-size: 30px;
+    background-color: black;
+    padding-right: 10px;
+}
+
+#question {
+    border: none;
+    text-align: right;
+    height:50px;
+    font-size: 25px;   
+    background-color: black;
+    padding-right: 10px;
+}
+
+input {
+    background-color: rgb(38, 33, 33);
+    color: white;
+}
+
+input[type="button"] {
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+input[value="AC"], input[value="0"] {
+    width: 125px !important;
+}
+
+.top input {
+    background-color: #6c757d;
+}
+
+[value="/"], [value="*"], [value="-"], 
+[value="+"], [value="="] {
+    background-color: #e0993b;
+}
